@@ -1,0 +1,107 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "password": "hashedpassword1",
+      "type": "professional",
+      "profession": "Electrician"
+    },
+    {
+      "id": 2,
+      "username": "Maria Lopez",
+      "email": "maria.lopez@example.com",
+      "password": "hashedpassword2",
+      "type": "client"
+    },
+    {
+      "id": 3,
+      "username": "Carlos Gomez",
+      "email": "carlos.gomez@example.com",
+      "password": "hashedpassword3",
+      "type": "professional",
+      "profession": "Plumber"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Electrical Installation",
+      "description": "Complete electrical system installation.",
+      "price": 100,
+      "duration": 2,
+      "availability": "Monday to Friday",
+      "professionalId": 1
+    },
+    {
+      "id": 2,
+      "name": "Leak Repair",
+      "description": "Repair leaks in pipes.",
+      "price": 50,
+      "duration": 1,
+      "availability": "Monday to Saturday",
+      "professionalId": 3
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "date": "2024-06-01",
+      "time": "10:00",
+      "status": "pending",
+      "comment": "Requires installation in the living room.",
+      "clientId": 2,
+      "serviceId": 1
+    },
+    {
+      "id": 2,
+      "date": "2024-06-02",
+      "time": "14:00",
+      "status": "confirmed",
+      "comment": "Repair leak in the bathroom.",
+      "clientId": 2,
+      "serviceId": 2
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "rating": 5,
+      "comment": "Excellent service.",
+      "date": "2024-06-03",
+      "professionalId": 1,
+      "clientId": 2,
+      "serviceId": 1,
+      "appointmentId": 1
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "comment": "Very good, but arrived a bit late.",
+      "date": "2024-06-04",
+      "professionalId": 3,
+      "clientId": 2,
+      "serviceId": 2,
+      "appointmentId": 2
+    }
+  ],
+  "statistics": [
+    {
+      "id": 1,
+      "totalSales": 1000,
+      "totalClients": 20,
+      "serviceStatistics": "{\"Electrical Installation\": 10, \"Leak Repair\": 10}",
+      "monthlyStatistics": "{\"January\": 5, \"February\": 5, \"March\": 10}",
+      "professionalId": 1
+    },
+    {
+      "id": 2,
+      "totalSales": 500,
+      "totalClients": 10,
+      "serviceStatistics": "{\"Leak Repair\": 10}",
+      "monthlyStatistics": "{\"January\": 2, \"February\": 3, \"March\": 5}",
+      "professionalId": 3
+    }
+  ]
+}
